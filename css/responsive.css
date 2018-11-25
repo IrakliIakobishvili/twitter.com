@@ -1,0 +1,40 @@
+@media (max-width: 1070px) {
+    .rightSide__form-top *:not(.loginBtnTop) {
+        display: none;
+    }
+    .loginBtnTop {
+        position: absolute;
+        top: 140px;
+        padding: 3px 10px !important;
+        font-size: 13px !important;
+        right: -115px;
+    }
+}
+@media (max-height: 660px) {
+    .rightSide__form-top {
+        display: none;
+    }
+}
+@media (max-width: 800px) {
+    .mainSection {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+    .leftSide, .rightSide {
+        width: 100%;
+    }
+    .rightSide {
+        overflow: auto;
+    }
+    .leftSide {
+        padding: 30px 0px;
+    }
+    .loginBtnTop {
+        top: -14px;
+        right: -170px;
+    }
+    .rightSide__signIn {
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'edge-icons';
+    src: url('fonts/edge/edge-icons-Regular.woff2') format('woff2'),
+        url('fonts/edge/edge-icons-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('fonts/segoe/SegoeUI.woff2') format('woff2'),
+        url('fonts/segoe/SegoeUI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    /* font-family: 'edge-icons'; */
+    font-family: 'Segoe UI';
+}
+
+.mainSection {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+.leftSide, .rightSide {
+    width: 50%;
+}
+
+/*------------------ Left Side -----------------*/
+.leftSide {
+    background-color: #1DA1F2;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.twitterIcon-bird {
+    height: 140vh;
+    right: -80vh;
+    top: -20vh;
+    position: absolute;
+}
+.leftSide__list {
+    position: relative;
+}
+.leftSide__list__item {
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    padding: 22px 0px;
+    position: relative;
+    letter-spacing: 1px;
+    padding-left: 50px;
+    background: url('../images/spreadhseet.png') no-repeat;
+}
+.leftSide__list__item:nth-of-type(1) {
+    background-position: -15px -12px;
+}
+.leftSide__list__item:nth-of-type(2) {
+    background-position: -15px -85px;
+}
+.leftSide__list__item:nth-of-type(3) {
+    background-position: -15px -153px;
+}
+/*------------------ Right Side -----------------*/
+.rightSide {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.rightSide__form-top input:not([type="submit"]) {       
+    line-height: 46px;       
+    width: 210px;
+    padding-left: 10px;       
+    background-color: #fff;       
+    border: 1px solid #e6ecf0;       
+    border-radius: 3px;       
+    margin-right: 8px;
+}
+
+.rightSide__form-top input:not([type="submit"]):focus {
+    color: #14171a;
+    border-color: rgba(0,132,180,0.5);
+}
+.rightSide__form-top {
+    position: absolute;
+    top: 30px;
+}
+.rightSide__form-top input[type="submit"] { 
+    background-color: #fff;  
+    border: 1px solid #1da1f2;  
+    color: #1da1f2; 
+    font-size: 14px;
+    line-height: 20px;  
+    padding: 6px 13px;  
+    border-radius: 100px;  
+    font-weight: bold;  
+    line-height: 32px;   
+    cursor: pointer;
+}
+.rightSide__form-top input[type="submit"]:hover {
+    background-color: #eaf5fd;
+}
+.forgotPass {
+    position: absolute;
+    right: 178px;
+    top: 50px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #aab8c2;
+}
+.forgotPass:hover {
+    text-decoration: underline;
+}
+.rightSide__signIn {
+    margin-bottom: 50px;
+}
+.rightSide__signIn img {
+    width: 60px;
+    margin-left: -12px;
+}
+.rightSide__signIn__heading-h1 {
+    font-size: 27px;
+    line-height: 32px;
+    color: #14171a;
+}
+.rightSide__signIn__heading-h2 {
+    color: #14171a; 
+    font-size: 18px;  
+    line-height: 24px;  
+    margin-top: 48px;  
+    margin-bottom: 16px;
+}
+.signUpBtn, .signInBtn {
+    border: 1px solid #1da1f2; 
+    color: #fff; 
+    border-radius: 100px;
+    cursor: pointer;  
+    font-size: 14px;  
+    font-weight: bold;  
+    line-height: 20px;  
+    padding: 6px 16px;  
+    text-align: center; 
+    width: 350px;
+}
+.signUpBtn {
+    background-color: #1da1f2;
+    margin-bottom: 16px;
+}
+.signUpBtn:hover {
+    background-color: #006dbf;
+}
+.signInBtn {
+    background-color: transparent;
+    color: #1da1f2;
+}
+.signInBtn:hover {
+    background-color: #eaf5fd;
+}
+.rightSide__signIn__form {
+    display: flex;  
+    flex-direction: column;
+}
+
+/*------------------- Footer --------------------*/
+.mainFooter {
+    position: fixed;
+    z-index: 12;
+    width: 100%;
+    background: #fff;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #e6ecf0;
+    padding: 11px 0;
+    position: fixed;
+}
+.mainFooter__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.mainFooter__list__item a {  
+    color: #aab8c2; 
+    font-size: 12px; 
+    padding: 0 9px 0 9px;
+}
+.mainFooter__list__item a:hover {
+    text-decoration: underline;
+}
